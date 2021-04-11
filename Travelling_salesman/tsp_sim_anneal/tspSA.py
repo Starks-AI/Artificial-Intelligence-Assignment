@@ -97,22 +97,14 @@ def simulatedAnneling(nodes,distances):
     return minTour,minCost
 
 
-def insertDistance(nodes):
-    i=0
-    while(i<nodes):
-        distances.append(list(map(float,input("Dist").strip().split(' '))))
-        i = i+1
-    return distances
-
-
 def calculateDistance(nodes,x,y):
     n=nodes
-    temp=[]
+    euc_d=[]
 
     for i in range(n):
         for j in range(n):
             val=math.sqrt(((x[i]-x[j])**2) + ((y[i]-y[j])**2))
-            temp.append(val)
+            euc_d.append(val)
 
     distances = [ temp[i*n:(i+1)*n] for i in range(n) ]
     return distances
