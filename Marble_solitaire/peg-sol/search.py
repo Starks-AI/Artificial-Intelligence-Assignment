@@ -59,7 +59,6 @@ def main():
     start_board = Board.board_from_file(sys.argv[1])
     method = sys.argv[2]
     heuristic = heuristics.manhattan_distance
-    print(heuristic)
     start = time.time()
     if method == 'bfs':
         seeker = BFS(start_board)
