@@ -1,4 +1,6 @@
 # Artificial-Intelligence-Assignment
+### [Report](/AI_Report_1.pdf)
+##
 Assignment 1:-
 
 
